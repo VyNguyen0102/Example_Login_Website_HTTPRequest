@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Sample_Login" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="mIL-fr-uaD" id="fNG-Km-WLx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mIL-fr-uaD">
+                    <rect key="frame" x="0.0" y="85" width="600" height="515"/>
+                    <color key="backgroundColor" red="0.81811071660000001" green="0.89422131900000001" blue="0.99168152109999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmn-Mt-aTK">
+                    <rect key="frame" x="10" y="35" width="580" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mIL-fr-uaD" secondAttribute="trailing" id="Ij1-sR-TSH"/>
+                <constraint firstItem="pmn-Mt-aTK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="K4m-Jj-p1f"/>
+                <constraint firstItem="mIL-fr-uaD" firstAttribute="top" secondItem="pmn-Mt-aTK" secondAttribute="bottom" constant="29" id="O9h-GV-SYF"/>
+                <constraint firstAttribute="bottom" secondItem="mIL-fr-uaD" secondAttribute="bottom" id="U2H-jq-sHO"/>
+                <constraint firstAttribute="trailing" secondItem="pmn-Mt-aTK" secondAttribute="trailing" constant="10" id="Xdc-tr-KW7"/>
+                <constraint firstItem="pmn-Mt-aTK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="dT0-oL-Uns"/>
+                <constraint firstItem="mIL-fr-uaD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qf9-Ne-vZ5"/>
+            </constraints>
+            <point key="canvasLocation" x="229" y="298"/>
+        </view>
+    </objects>
+</document>
