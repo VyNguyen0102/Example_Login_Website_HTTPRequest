@@ -19,9 +19,6 @@ class LoginViewController: UIViewController, UIWebViewDelegate, NSURLConnectionD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewController = MainViewController.init()
-        self.presentViewController(viewController, animated: true, completion: nil)
-        
         txtEmail.text = "nguyenvanvy0102@gmail.com"
     }
 
@@ -48,14 +45,6 @@ class LoginViewController: UIViewController, UIWebViewDelegate, NSURLConnectionD
             print("Connection could not be made");
         }
     }
-//    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-//        print(request.URL)
-//        if (((request.URL?.absoluteString.containsString("login")) == false)){
-//            let viewController = MainViewController.init()
-//            self.presentViewController(viewController, animated: true, completion: nil)
-//        }
-//        return true
-//    }
     func connection(connection: NSURLConnection, didReceiveResponse response: NSURLResponse) {
         print(response)
         btnLogin.enabled = true

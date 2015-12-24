@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let urlPath: String = "https://facebook.com"
+        let urlPath: String = "https://m.facebook.com"
         let url1: NSURL = NSURL(string: urlPath)!
         let request1: NSURLRequest = NSURLRequest(URL: url1)
         let queue:NSOperationQueue = NSOperationQueue()
@@ -28,8 +28,6 @@ class MainViewController: UIViewController {
             print(datastring)
             dispatch_sync(dispatch_get_main_queue(), {
                 self.textView.text = datastring
-                datastring.en
-                
             });
 
         })
