@@ -19,7 +19,6 @@ class LoginViewController: UIViewController, UIWebViewDelegate, NSURLConnectionD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtEmail.text = "nguyenvanvy0102@gmail.com"
     }
 
     @IBAction func btnLoginClick(sender: AnyObject) {
